@@ -8,28 +8,34 @@
 .fl {
     float: left;
 }
+.fr{
+    float: right;
+}
 .clearfix::after{
     content: "";
     display: table;
     clear: both;
 }
+header,section{
+    height: 600px;
+}
+
 /*--- Header --- */
 header{
     background-image: url(../img/jumbo.png);
-    height: 600px;
     background-position: center;
     background-size: cover;
     font-weight: 900;
+    text-align: center;
+
 }
 header > .container{
     position: relative;
 }
 .container{
-    max-width: 1100px;
+    max-width: 1200px;
     height: 100%;
     margin: 0 auto;
-    text-align: center;
-
 }
 /* Nav-Bar */
 header nav{
@@ -64,9 +70,8 @@ header nav li{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
-
 }
-.title{
+.title-header{
     font-size: 45px;
     padding: 30px 0;
 }
@@ -76,7 +81,7 @@ header nav li{
 .button a{
     text-decoration: none;
     margin: 0 10px;
-    padding: 10px;
+    padding: 15px;
     border-radius: 50px;
 }
 .download{
@@ -87,10 +92,106 @@ header nav li{
     background-color: black;
     color: white;
 }
-/*--- Prima sezione --- */
-.img-left{
+
+/*--- Parti comuni a tutte le prime tre sezioni ---*/
+section{
+    padding: 100px 0;
+}
+section.clearfix div[class^="img"]{
     width: 50%;
 }
-.text-right{
-  width: 50%;  
+section.clearfix div[class^="text"]{
+    width: 50%;
 }
+.title-section{
+    font-weight: 900;
+    font-size: 55px;
+    padding:0 0 40px 0 ;
+}
+.title-section + div{
+    font-size: 23px;
+}
+/* Sezioni con immagine a sinistra e testo a destra */
+.text-right{
+    padding: 50px 0 0 200px;
+  }  
+/* Sezioni con testo a sinistra e immagini a destra */
+.text-left{
+    padding: 50px 200px 0 0;
+  }  
+
+/*---Quarta e ultima sezione ---*/
+.fourth-section{
+    text-align: center;
+    height: 1000px;
+}
+.text-top-button{
+    background-image: url(../img/stars.svg);
+    background-size: cover;
+    background-position: center;
+    width: max-content;
+    margin: 0 auto 50px auto;
+    padding: 15px 50px 0 20px;
+    font-size: 20px;
+    font-weight: 900;
+}
+.fourth-section a{
+    text-decoration: none;
+    margin: 10px;
+    padding: 15px;
+    border-radius: 50px;
+    background-color: rgb(100, 57, 218);
+    color: white;
+}
+
+/* Footer */
+footer section{
+    background-color: black;
+    height: 700px;
+}
+footer .container{
+    border-bottom: 1px solid purple;
+    margin-bottom: 20px;
+}
+footer ul{
+    list-style: none;
+}
+li img{
+    margin: 10px 10px 0 0;
+    height: 20px;
+}
+footer li {
+    color: white;
+}
+footer li:first-child{
+    color: purple;
+    font-size: 25px;
+    font-weight: bold;
+}
+.condividi{
+    width: 33%;
+}
+footer .condividi ~ div {
+    width: calc(100% / 6);
+}
+footer li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+.final{
+    width: 1200px;
+    margin: 0 auto;
+}
+.accedi{
+    background-color: white;
+    padding: 10px 10px;
+    border-radius: 20px;
+}
+
+
+
+
+
