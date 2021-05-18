@@ -57,11 +57,17 @@ header nav li{
 .nav-center{
     width: 50%;
 }
-.nav-center li > a{
+header li > a{
     display: block;
     text-decoration: none;
+    font-size: 18px;
+}
+.nav-center li > a{
     color: white;
-    font-size: 18px;}
+}
+.nav-right li > a{
+    color: black;
+}
 .nav-right li{
     background-color: white;
     padding: 0 10px;
