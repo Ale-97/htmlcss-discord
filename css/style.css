@@ -56,8 +56,12 @@ header nav li{
 }
 .nav-center{
     width: 50%;
-    color: white;
 }
+.nav-center li > a{
+    display: block;
+    text-decoration: none;
+    color: white;
+    font-size: 18px;}
 .nav-right li{
     background-color: white;
     padding: 0 10px;
@@ -157,7 +161,7 @@ footer .container{
 footer ul{
     list-style: none;
 }
-li img{
+footer li img{
     margin: 10px 10px 0 0;
     height: 20px;
 }
